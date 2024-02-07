@@ -1,4 +1,77 @@
-#root {
+:root {
+  --font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: black;
+  color: antiquewhite;
+}
+
+.calc-display {
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  border: 1px solid black;
+  overflow: auto;
+  width: 34vh;
+  margin: 1vh;
+  font-size: medium;
+}
+
+p {
+  padding: 1vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  flex-direction: column;
+  color: black;
+  margin-top: 15vh;
+  margin-left: 80vh;
+  width: 36vh;
+  height: fit-content;
+  padding: 1vh;
+}
+
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  height: 6vh;
+  width: 10vh;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #000000;
+  color: aliceblue;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin: 1vh;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +112,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */

@@ -75,7 +75,11 @@ const App = () => {
 
     <div className="container">
 
-      <div className="calc-display">{allBtnClicked}</div>
+      <div className="calc-display">
+        <p>
+          {allBtnClicked}
+        </p>
+      </div>
 
       <div className="calc-btn">
 
